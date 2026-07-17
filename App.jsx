@@ -1,14 +1,5 @@
-import { View, Text, ScrollView } from "react-native";
-import Navbar from "./src/components/Navbar";
-import Intro from "./src/components/Intro";
+import StackNavigator from "./src/navigation/StackNavigator"
 const App = () => {
-  return (
-    <View>
-      <ScrollView>
-        <Navbar />
-        <Intro />
-      </ScrollView>
-    </View>
-  )
+  return <StackNavigator/>
 }
 export default App;
