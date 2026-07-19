@@ -418,7 +418,7 @@ const CreateBill = ({ navigation }) => {
         <td class="item-title">${elem.otherServiceName}</td>
         <td class="rate-cell">-</td>
         <td class="right">-</td>
-        <td class="right">₹${Number(elem.price).toLocaleString("en-IN")}</td>
+        <td class="rightmostdata">₹${Number(elem.price).toLocaleString("en-IN")}</td>
       </tr>
     `
                 )
@@ -436,7 +436,7 @@ const CreateBill = ({ navigation }) => {
                     (elem) => `
                         <tr>
                 <td class="label" colspan="3">${elem.deducedChargeName}</td>
-                <td class="value">₹${Number(elem.deduced).toLocaleString("en-IN")}</td>
+                <td class="value">-₹${Number(elem.deduced).toLocaleString("en-IN")}</td>
             </tr>
                     `
                 ).join("")
