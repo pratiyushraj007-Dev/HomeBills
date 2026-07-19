@@ -29,7 +29,9 @@ const Intro = ({navigation}) => {
                     <Text style={{fontSize:20,fontWeight:"700",fontFamily:"sans-serif-medium",color:"#ffffff",letterSpacing:0.5}}>Create</Text>
                 </Pressable>
                 <Pressable 
-                style={[styles.introBtn,{backgroundColor:"rgba(244, 63, 94, 0.8)", borderColor: "rgba(244, 63, 94, 1)"}]}>
+                style={[styles.introBtn,{backgroundColor:"rgba(244, 63, 94, 0.8)", borderColor: "rgba(244, 63, 94, 1)"}]}
+                onPress={()=>navigation.navigate("History")}
+                >
                     <History size={22} color={"#ffffff"}/>
                     <Text style={{fontSize:20,fontWeight:"700",fontFamily:"sans-serif-medium",color:"#ffffff",letterSpacing:0.5}}>History</Text>
                 </Pressable>
